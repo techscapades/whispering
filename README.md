@@ -13,7 +13,7 @@ Setup on linux host system shell:
 5. docker exec -it whisper-dev /bin/bash
 6. bash install_whispering.sh
 7. if mic is not plugged in: plug it in, exit and reboot system
-8. if mic was plugged in run python3 whispering.py
+8. if mic was plugged in: run python3 whispering.py
 
 Start app from host:
 1. docker start whisper-dev && docker exec -it whisper-dev bash -c "python3 /whispering.py || exec bash"

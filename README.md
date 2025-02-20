@@ -1,4 +1,4 @@
-**Aim: Dockerise whisper.cpp and have it act as an offline speech to text "sensor" which runs on low power hardware like the nanopi neo3**
+**Aim: Dockerise whisper.cpp and have it act as an offline speech to text "sensor" using python and user input which runs on low power hardware like the nanopi neo3**
 
 Setup a docker container to run a pyhton script called whispering.py, ensure microphone is plugged in at all times
 

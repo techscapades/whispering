@@ -1,3 +1,5 @@
+**Aim: Dockerise whisper.cpp and have it act as an offline speech to text "sensor" which runs on low power hardware like the nanopi neo3**
+
 Setup a docker container to run a pyhton script called whispering.py, ensure microphone is plugged in at all times
 
 python script flow:
@@ -31,3 +33,6 @@ Modifying whisper model for speed or accuracy ex: tiny to base model after insta
 5. save and rerun whispering.py
 
 On my Nanopi neo3, the difference between tiny and base is an average 2x longer inference time using base even though it is more accurate. That said as long as the audio is clear on the tiny model, there isn't as much of a difference unless short-hands for words are used, ex: mic for microphone does have better results on base than tiny
+
+Potential improvements:
+1. sending the output through http or mqtt to do things with the output

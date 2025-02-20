@@ -17,7 +17,9 @@ Setup on linux host system shell:
 
 Start app from host:
 1. docker start whisper-dev && docker exec -it whisper-dev bash -c "python3 /whispering.py || exec bash"
+   
 OR
+
 1. docker start whisper-dev && docker exec -it whisper-dev bash -c "python3 /whispering.py; exec bash"
 
 

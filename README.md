@@ -1,4 +1,4 @@
-Setup a docker container to run a pyhton script called whispering.py
+Setup a docker container to run a pyhton script called whispering.py, ensure microphone is plugged in at all times
 
 python script flow:
 1. User input 'w' to start recording
@@ -12,7 +12,12 @@ Setup on linux host system shell:
 4. docker run -t -d --device /dev/snd --privileged --network host --name whisper-dev -v /etc/install_whispering.sh:/install_whispering.sh ubuntu
 5. docker exec -it whisper-dev /bin/bash
 6. bash install_whispering.sh
-7. exit and reboot system
+7. if mic is not plugged in: plug it in, exit and reboot system
+8. if mic was plugged in run python3 whispering.py
 
 Start app from host:
-1. docker
+1. docker start whisper-dev && docker exec -it whisper-dev bash -c "python3 /whispering.py || exec bash"
+OR
+1. docker start whisper-dev && docker exec -it whisper-dev bash -c "python3 /whispering.py; exec bash"
+
+

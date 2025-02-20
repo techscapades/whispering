@@ -30,4 +30,4 @@ Modifying whisper model for speed or accuracy ex: tiny to base model after insta
 4. change "/whisper.cpp/models/ggml-tiny.en.bin" to "/whisper.cpp/models/ggml-base.en.bin"
 5. save and rerun whispering.py
 
-On my Nanopi neo3, the difference between tiny and base is an average 2x longer inference time using base but it is more accurate, though that said as long as the audio is clear on the tiny model, there isn't as much of a difference unless short-hands for words are used, ex: mic for microphone does have better results on base than tiny
+On my Nanopi neo3, the difference between tiny and base is an average 2x longer inference time using base even though it is more accurate. That said as long as the audio is clear on the tiny model, there isn't as much of a difference unless short-hands for words are used, ex: mic for microphone does have better results on base than tiny

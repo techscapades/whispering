@@ -6,7 +6,7 @@ import re
 
 # Function to check which audio device is available
 def find_working_device():
-    devices = ["plughw:0", "plughw:1"]  # Add more if needed
+    devices = ["plughw:2", "plughw:1", "plughw:0"]  # Add more if needed
 
     for device in devices:
         command = [

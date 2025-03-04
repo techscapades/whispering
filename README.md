@@ -41,5 +41,17 @@ Modifying whisper model for speed or accuracy ex: tiny to base model after insta
       medium medium.en medium-q5_0 medium.en-q5_0 medium-q8_0
       large-v1 large-v2 large-v2-q5_0 large-v2-q8_0 large-v3 large-v3-q5_0 large-v3-turbo large-v3-turbo-q5_0 large-v3-turbo-q8_0
 
+7a. if you happen to have more than 1 sound device, just modify the whispering.py file and add "plughw: 3" etc...:
+
+   def find_working_device():
+    devices = ["plughw:2", "plughw:1", "plughw:0"]  # Add more if needed
+
+7b. or you can hardcode a specific sound device by replacing this line: 
+
+   replace: WORKING_DEVICE = find_working_device()
+   to     : WORKING_DEVICE = "plughw:2"
+
+   
+
 On my Nanopi neo3, the difference between tiny and base is an average 2x longer inference time using base even though it is more accurate. That said as long as the audio is clear on the tiny model, there isn't as much of a difference unless short-hands for words are used, ex: mic for microphone does have better results on base than tiny
 

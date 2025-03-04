@@ -43,8 +43,8 @@ Modifying whisper model for speed or accuracy ex: tiny to base model after insta
 
 7a. if you happen to have more than 1 sound device, just modify the whispering.py file and add "plughw: 3" etc...:
 
-   def find_working_device():
-    devices = ["plughw:2", "plughw:1", "plughw:0"]  # Add more if needed
+   \t def find_working_device():
+    \t devices = ["plughw:2", "plughw:1", "plughw:0"]  # Add more if needed
 
 7b. or you can hardcode a specific sound device by replacing this line: 
 

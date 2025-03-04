@@ -1,6 +1,6 @@
 **Aim: Dockerise whisper.cpp and have it act as an offline speech to text "sensor" using python and user input which runs on low power hardware like the nanopi neo3**
 
-Setup a docker container to run a pyhton script called whispering.py, ensure microphone is plugged in at all times
+Setup a docker container to run a python script called whispering.py, ensure microphone is plugged in at all times
 
 python script flow:
 1. User input 'w' to start recording

@@ -48,8 +48,8 @@ Modifying whisper model for speed or accuracy ex: tiny to base model after insta
 
 7b. or you can hardcode a specific sound device by replacing this line: 
 
-   replace: WORKING_DEVICE = find_working_device()
-   to     : WORKING_DEVICE = "plughw:2"
+   \t replace: WORKING_DEVICE = find_working_device()
+   \t to     : WORKING_DEVICE = "plughw:2"
 
    
 
